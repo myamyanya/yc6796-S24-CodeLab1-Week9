@@ -79,7 +79,8 @@ public class LocationScriptableObject : ScriptableObject
             west.east = this;
         }
 
-        if (item.name == "EmptyItem")
+        // Displaying the item info
+        if (item == null)
         {
             Debug.Log("Nothing to pick up here");
             
@@ -88,6 +89,8 @@ public class LocationScriptableObject : ScriptableObject
         }
         else
         {
+            Debug.Log(item.itemName);
+            
             gm.pickUpButton.gameObject.SetActive(true);
             gm.itemInfo.text = item.itemDesc;
         }

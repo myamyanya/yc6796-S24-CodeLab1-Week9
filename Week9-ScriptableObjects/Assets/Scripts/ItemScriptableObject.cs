@@ -26,6 +26,13 @@ public class ItemScriptableObject : ScriptableObject
 
     public void UpdateItems(GameManager gm)
     {
-        gm.inventory.text = "You have ...";
+        if (gm.inventoryItems.Count > 0)
+        {
+            gm.inventory.text = "You have ..." + "\n" + gm.inventoryItems;
+        }
+        else
+        {
+            gm.inventory.text = "Your inventory is empty.";
+        }
     }
 }

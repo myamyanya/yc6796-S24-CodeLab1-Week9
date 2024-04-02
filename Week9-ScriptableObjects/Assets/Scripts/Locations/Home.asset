@@ -18,4 +18,4 @@ MonoBehaviour:
   south: {fileID: 11400000, guid: c3c66561a61edfc40ac1495c947247ce, type: 2}
   east: {fileID: 11400000, guid: efd1a34c549f9864ea31c2f0a088440e, type: 2}
   west: {fileID: 11400000, guid: 607f63f7b119b2143aff9c132f8a3700, type: 2}
-  item: {fileID: 11400000, guid: 3f00791722b02f44bbabe5ecd583cf53, type: 2}
+  item: {fileID: 0}

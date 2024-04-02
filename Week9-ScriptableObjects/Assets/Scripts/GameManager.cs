@@ -58,9 +58,13 @@ public class GameManager : MonoBehaviour
         // ... some confusion about this part
         currenLocation.UpdateCurrentLocation(this);
     }
+
+    public List<string> inventoryItems = new List<string>();
     
     public void PickUp()
     {
+        Debug.Log("Collecting...");
         
+        inventoryItems.Add(pickUpItem.itemName + ".");
     }
 }
