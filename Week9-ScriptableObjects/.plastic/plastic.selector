@@ -1,0 +1,4 @@
+repository "CodeLab1-S24-Week9-ScriptableObjects@Vivian_Chen@cloud"
+  path "/"
+    br "/main"
+    co "/main"
