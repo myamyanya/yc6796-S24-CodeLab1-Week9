@@ -16,5 +16,6 @@ MonoBehaviour:
   locationDesc: Stay quiet and you're safe!
   north: {fileID: 0}
   south: {fileID: 0}
-  east: {fileID: 0}
+  east: {fileID: 11400000, guid: ed5d41b4bc9735b488803dcdbb2e0f4f, type: 2}
   west: {fileID: 0}
+  item: {fileID: 11400000, guid: 68548359bdeaf8148bb611712ab153c6, type: 2}

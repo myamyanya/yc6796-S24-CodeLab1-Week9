@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    // For navigation
     public TextMeshProUGUI titleUI;
     public TextMeshProUGUI descriptionUI;
 
@@ -16,17 +17,21 @@ public class GameManager : MonoBehaviour
     public Button buttonEast;
     public Button buttonWest;
     
+    // For pick up items
+    public TextMeshProUGUI inventory;
+
+    public TextMeshProUGUI itemInfo;
+    public Button pickUpButton;
+    
+    public ItemScriptableObject pickUpItem;
+    
     // Start is called before the first frame update
     void Start()
     {
         currenLocation.PrintLocation();
         currenLocation.UpdateCurrentLocation(this);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
+        pickUpItem.UpdateItems(this);
     }
 
     public void MoveDirection(string dirChar)
@@ -53,8 +58,8 @@ public class GameManager : MonoBehaviour
         // ... some confusion about this part
         currenLocation.UpdateCurrentLocation(this);
     }
-
-    public void PickUpItem()
+    
+    public void PickUp()
     {
         
     }

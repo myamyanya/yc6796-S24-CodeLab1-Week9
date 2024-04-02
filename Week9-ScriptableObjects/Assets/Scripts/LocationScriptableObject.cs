@@ -6,7 +6,8 @@ using UnityEngine;
     (
         fileName = "New Location",
         menuName = "ScriptableObjectLocation",
-        order = 0)
+        order = 0
+        )
 ]
 
 public class LocationScriptableObject : ScriptableObject
@@ -18,11 +19,13 @@ public class LocationScriptableObject : ScriptableObject
     public LocationScriptableObject south;
     public LocationScriptableObject east;
     public LocationScriptableObject west;
+
+    public ItemScriptableObject item;
     
     public void PrintLocation()
     {
-        string printStr = "\nLocation Name:" + locationName +
-                          "\nLocation Description" + locationDesc;
+        string printStr = "\nLocation Name: " + locationName +
+                          "\nLocation Description " + locationDesc;
         
         Debug.Log(printStr);
     }
@@ -74,6 +77,19 @@ public class LocationScriptableObject : ScriptableObject
         {
             gm.buttonWest.gameObject.SetActive(true);
             west.east = this;
+        }
+
+        if (item.name == "EmptyItem")
+        {
+            Debug.Log("Nothing to pick up here");
+            
+            gm.pickUpButton.gameObject.SetActive(false);
+            gm.itemInfo.text = "";
+        }
+        else
+        {
+            gm.pickUpButton.gameObject.SetActive(true);
+            gm.itemInfo.text = item.itemDesc;
         }
     }
 }
