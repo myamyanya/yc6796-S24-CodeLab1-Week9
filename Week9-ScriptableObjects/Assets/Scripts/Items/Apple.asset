@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Apple
   m_EditorClassIdentifier: 
   itemName: an Apple
-  itemDesc: You see a juicy apple!
+  itemDesc: You see some juicy apples here!
   itemImage: {fileID: 0}

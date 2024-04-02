@@ -15,3 +15,7 @@ MonoBehaviour:
   locationName: Backyard
   locationDesc: BBQ, worms in there, grass... touch it!
   north: {fileID: 11400000, guid: 837a1b344748df74e8a20617ab891af9, type: 2}
+  south: {fileID: 11400000, guid: ed5d41b4bc9735b488803dcdbb2e0f4f, type: 2}
+  east: {fileID: 0}
+  west: {fileID: 0}
+  item: {fileID: 0}

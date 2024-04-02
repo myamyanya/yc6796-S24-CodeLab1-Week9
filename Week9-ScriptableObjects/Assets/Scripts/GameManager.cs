@@ -65,10 +65,9 @@ public class GameManager : MonoBehaviour
     public void PickUp()
     {
         Debug.Log("Collecting...");
-
-        //pickUpItem.PrintPickedUpItem();
         
         inventoryItems.Add(currenLocation.item.itemName + ".");
+        currenLocation.item = null;
     }
 
     private void Update()

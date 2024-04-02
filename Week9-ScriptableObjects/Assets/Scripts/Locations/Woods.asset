@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Woods
   m_EditorClassIdentifier: 
   locationName: The Woods
-  locationDesc: A dark place... with a lot of trees. You can see some berries.
+  locationDesc: 'A dark place... with a lot of trees. '
   north: {fileID: 0}
-  south: {fileID: 0}
+  south: {fileID: 11400000, guid: 46e94c682bbfa7146a8fa1d6074a8d5d, type: 2}
   east: {fileID: 0}
   west: {fileID: 0}
+  item: {fileID: 0}
