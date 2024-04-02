@@ -742,7 +742,7 @@ MonoBehaviour:
   inventory: {fileID: 1004065925}
   itemInfo: {fileID: 972489127}
   pickUpButton: {fileID: 649548622}
-  pickUpItem: {fileID: 11400000, guid: 3f00791722b02f44bbabe5ecd583cf53, type: 2}
+  pickUpItem: {fileID: 11400000, guid: ddfffcb3b88da4f40b69068690a365af, type: 2}
   inventoryItems: []
 --- !u!4 &505940609
 Transform:

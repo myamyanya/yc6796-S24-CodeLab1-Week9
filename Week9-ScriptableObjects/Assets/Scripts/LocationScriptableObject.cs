@@ -93,6 +93,8 @@ public class LocationScriptableObject : ScriptableObject
             
             gm.pickUpButton.gameObject.SetActive(true);
             gm.itemInfo.text = item.itemDesc;
+            
+            //gm.inventoryItems.Add(item.itemName + ".");
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
         currenLocation.PrintLocation();
         currenLocation.UpdateCurrentLocation(this);
         
-        pickUpItem.UpdateItems(this);
+        //pickUpItem.UpdateItems(this);
     }
 
     public void MoveDirection(string dirChar)
@@ -64,7 +65,23 @@ public class GameManager : MonoBehaviour
     public void PickUp()
     {
         Debug.Log("Collecting...");
+
+        //pickUpItem.PrintPickedUpItem();
         
-        inventoryItems.Add(pickUpItem.itemName + ".");
+        inventoryItems.Add(currenLocation.item.itemName + ".");
+    }
+
+    private void Update()
+    {
+        if (inventoryItems.Count > 0)
+        {
+            string items = string.Join(" ", inventoryItems);
+            
+            inventory.text = "You have ..." + "\n" + items;
+        }
+        else
+        {
+            inventory.text = "Your inventory is empty.";
+        }
     }
 }
